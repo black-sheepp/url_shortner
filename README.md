@@ -84,3 +84,65 @@ This project implements a URL shortening service using Node.js, Express, and Mon
 4. Start the server: `npm start`
 5. Access the application at `http://localhost:8080`
 
+
+Certainly! Below is a sample API request for testing the `/shorten` endpoint, including headers and a token. This example assumes you have successfully obtained a valid JWT token during the user authentication process.
+
+### Test API Sample
+
+#### Create Shortened URL
+
+**Endpoint:** `POST /shorten`
+
+**Request Headers:**
+- Content-Type: application/json
+- Authorization: Bearer `<Your JWT Token>`
+
+**Request Body:**
+```json
+{
+  "redirectURL": "https://www.example.com"
+}
+```
+
+**Response:**
+```json
+{
+  "shortURL": "abc123",
+  "redirectURL": "https://www.example.com"
+}
+```
+
+### Obtaining JWT Token
+
+To obtain a valid JWT token for testing, you can follow these steps:
+
+1. **Register a new user:**
+   - **Endpoint:** `POST /sign-up`
+   - **Request Body:**
+     ```json
+     {
+       "name": "Test User",
+       "email": "test@example.com",
+       "password": "testpassword"
+     }
+     ```
+   - After a successful registration, you will receive a JWT token in the response.
+
+2. **Log in with the registered user:**
+   - **Endpoint:** `POST /sign-in`
+   - **Request Body:**
+     ```json
+     {
+       "email": "test@example.com",
+       "password": "testpassword"
+     }
+     ```
+   - After a successful login, you will receive a new JWT token in the response.
+
+3. **Use the obtained token in the `/shorten` endpoint:**
+   - Copy the JWT token from the login response.
+   - Include it in the `Authorization` header of subsequent requests to protected endpoints.
+
+**Note:** Make sure to replace `<Your JWT Token>` with the actual JWT token obtained during the authentication process.
+
+This test API sample demonstrates how to create a shortened URL by sending a POST request to the `/shorten` endpoint with the required headers and a valid JWT token. Adjust the values accordingly based on your actual implementation and testing requirements.
