@@ -82,12 +82,15 @@ This project implements a URL shortening service using Node.js, Express, and Mon
 2. Run the MongoDB database using the provided connection string.
 3. Install dependencies: `npm install`
 4. Start the server: `npm start`
-5. Access the application at `http://localhost:8080`
+5. Access the application at `http://localhost:8080 (Locally) or https://url-shortner-ayo6.onrender.com/ (Deployed Website)`
 
 
 Certainly! Below is a sample API request for testing the `/shorten` endpoint, including headers and a token. This example assumes you have successfully obtained a valid JWT token during the user authentication process.
 
 ### Test API Sample
+
+ Access the website at `http://localhost:8080 (Locally) or https://url-shortner-ayo6.onrender.com/ (Deployed Website)`
+
 
 #### Create Shortened URL
 
