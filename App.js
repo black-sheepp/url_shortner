@@ -12,7 +12,6 @@ App.use(bodyParser.json());
 App.use(bodyParser.urlencoded({ extended: true }));
 App.use(cookieParser());
 
-
 App.use("/", require("./Routes"));
 
 App.listen(PORT, () => {
