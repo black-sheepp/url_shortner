@@ -91,7 +91,6 @@ Certainly! Below is a sample API request for testing the `/shorten` endpoint, in
 
  Access the website at `http://localhost:8080 (Locally) or https://url-shortner-ayo6.onrender.com/ (Deployed Website)`
 
-
 #### Create Shortened URL
 
 **Endpoint:** `POST /shorten`
@@ -147,5 +146,10 @@ To obtain a valid JWT token for testing, you can follow these steps:
    - Include it in the `Authorization` header of subsequent requests to protected endpoints.
 
 **Note:** Make sure to replace `<Your JWT Token>` with the actual JWT token obtained during the authentication process.
+
+<img width="1680" alt="Screenshot 2023-12-21 at 1 27 44 AM" src="https://github.com/black-sheepp/url_shortner/assets/53144060/eb05e548-f26c-430a-b3ac-f39ab0a23783">
+<img width="1680" alt="Screenshot 2023-12-21 at 1 28 07 AM" src="https://github.com/black-sheepp/url_shortner/assets/53144060/d32a2867-e6eb-45ca-b84c-7b69b78c9ddb">
+<img width="1680" alt="Screenshot 2023-12-21 at 1 27 51 AM" src="https://github.com/black-sheepp/url_shortner/assets/53144060/1628cf39-4bfb-47fd-82bd-c71e4620194f">
+<img width="1680" alt="Screenshot 2023-12-21 at 1 27 59 AM" src="https://github.com/black-sheepp/url_shortner/assets/53144060/f5c93d90-d885-41e3-a2b9-780de4c338f6">
 
 This test API sample demonstrates how to create a shortened URL by sending a POST request to the `/shorten` endpoint with the required headers and a valid JWT token. Adjust the values accordingly based on your actual implementation and testing requirements.
